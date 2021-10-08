@@ -1,0 +1,31 @@
+pre{
+    background-color:black;
+    border:1px dashed gray;
+    padding:5px;
+    color:white;
+    display:block;
+    border-radius: 5px;
+    font-family: 'Consolas', monospace;
+}
+
+body {
+    margin:0px;
+    padding:0px;
+    height: 100vh;
+    background-position:
+        top 10px left 10px,
+        top 10px right 10px,
+        bottom 10px right 10px,
+        bottom 10px left 10px;
+    background-size: 86px;
+    background-repeat: no-repeat;
+    background-image:
+        url(img/angles-top-left.svg),
+        url(img/angles-top-right.svg),
+        url(img/angles-bottom-right.svg),
+        url(img/angles-bottom-left.svg);
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}

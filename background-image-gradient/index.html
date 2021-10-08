@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Base</title>
+</head>
+<body>
+    <div class="tinted-image"></div>
+    <div class="tinted-image-2"></div>
+
+<div class="container">
+<pre>
+<code>
+
+/* Pas de jeu sur l'opacité */
+.tinted-image {
+    width: 300px;
+    height: 200px;
+    background: 
+        linear-gradient(
+            45deg,
+        rgba(255, 0, 0, 0.45), 
+        rgba(174, 0, 255, 0.45)
+        ),
+        url(img/owl1.jpg);
+    }
+
+/* jeu sur l'opacité : de 0.45 à 1 */
+.tinted-image-2 {
+    width: 885px;
+    height: 500px;
+    background: 
+        linear-gradient(
+            90deg,
+        rgba(0, 255, 128, 0.45), 
+        rgba(255, 255, 255, 1)
+        ),
+        url(img/hiboux.jpg);
+}
+</code>
+</pre>
+</div>
+</body>
+</html>

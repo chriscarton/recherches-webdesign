@@ -1,0 +1,14 @@
+#dogPic, #catPic {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: red;
+    top: 50%;
+    left: 50%;
+  }
+  
+  #dogPic {
+    background: blue;
+    top: 25%;
+    left: 25%;
+  }

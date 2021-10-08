@@ -1,0 +1,38 @@
+body {
+    margin: 0px;
+}
+
+pre{
+    background-color:black;
+    border:1px dashed gray;
+    padding:5px;
+    color:white;
+    display:block;
+    border-radius: 5px;
+    font-family: 'Consolas', monospace;
+}
+.container{
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    white-space: nowrap;
+}
+h1 span {
+    font-family: cursive;
+    position: relative;
+}
+h1 span::before,
+h1 span::after {
+    vertical-align: middle;
+    display: inline-block;
+    content: url(img/squiggle.svg);
+    /* C'est la même image qui est utilisée */
+}
+h1 span::after {
+    transform: scaleX(-1);
+    /* Pour retourner l'image */
+}

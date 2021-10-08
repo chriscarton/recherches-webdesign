@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Base</title>
+</head>
+<body>
+    <section>
+        <h1 class="clip-text">Hasta la vista, baby.</h1>
+    </section>
+    <section id="explainations">
+        <div class="container">
+            <pre>
+                <code>
+/* Donner cette classe à l'élément texte */
+
+.clip-text{
+    font-size:10vw;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-size:cover;
+
+    /* Ce sont ces deux propriétés là qui sont importantes*/
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+    /* Ce qui va apparaître dans le texte */
+    background-image: url('img/forest.jpg');
+    
+    /* Couleur du texte qui se marche le mieux sur l'image au cas ou ça ne marche pas */
+    color: red;
+}
+                </code>
+            </pre>
+        </div>
+    </section>
+</body>
+</html>
