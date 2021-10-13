@@ -1,0 +1,75 @@
+/* ou html */
+html{ 
+    font-size: 24px;
+    line-height: 1.5em;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-size: 2rem;
+    margin:0px;
+    font-family: 'Alice', serif;
+    margin-bottom: 1.5rem;
+}
+h2{font-size:1.8rem;}
+h3{font-size:1.6rem;}
+h4{font-size:1.4rem;}
+h5{font-size:1.2rem;}
+h6{font-size: 1.1rem;}
+
+pre{
+    background-color:black;
+    border:1px dashed gray;
+    padding:5px;
+    color:white;
+    display:block;
+    border-radius: 5px;
+    font-family: 'Consolas', monospace;
+}
+
+.container{
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.error{
+    color:red;
+    font-weight: bold;
+}
+
+#Home{
+    background-color: powderblue;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, ul, ol {
+    margin-bottom: 1.5rem;
+    /* 16x1.5 = 24 */
+}
+
+button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color:seagreen;
+    color:palegoldenrod;
+    font-weight: bold;
+    font-family: monospace;
+    margin:1.5rem;
+    border:0px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Root Em</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="Home">
+        <h1>Root EM, comment ça marche ?</h1>
+        <pre>
+            <code>
+/* Ou sur html */
+:root{
+    font-size: 24px;
+    line-height: 1.5em;
+}
+
+h1, h2, h3, h4, ul, ol {
+    margin-bottom: 1.5rem;
+}
+
+button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size:1.2rem;
+    /* 24px*1.2 = 28.8px*/
+}
+
+p{
+    font-size:1rem;
+    /* On doit toujours définir pour suivre la taille de root */
+}
+
+
+            </code>
+        </pre>
+        <p>
+            On définit une taille de base de 24px. <br>
+        </p>
+        
+        <button href="#" class="button">Click me !</button>
+        
+    </div>
+</body>
+</html>

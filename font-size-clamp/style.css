@@ -1,0 +1,39 @@
+body {
+    margin: 0px;
+}
+
+pre{
+    background-color:black;
+    border:1px dashed gray;
+    padding:5px;
+    color:white;
+    display:block;
+    border-radius: 5px;
+    font-family: 'Consolas', monospace;
+}
+
+
+.error{
+    color:red;
+    font-weight: bold;
+}
+section{
+    min-height:100vh;
+}
+#Home{
+    background-color:sienna;
+}
+#Tips{
+    background-color:tan;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    margin:0px;
+    padding:0px;
+    color:white;
+    font-family: 'Cantata One', serif;
+    font-size:clamp(16px,15vw,150px);
+}

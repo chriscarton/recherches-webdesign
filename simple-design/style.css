@@ -1,0 +1,96 @@
+body {
+    margin: 0px;
+}
+
+pre{
+    background-color:black;
+    border:1px dashed gray;
+    padding:5px;
+    color:white;
+    display:block;
+    border-radius: 5px;
+    font-family: 'Consolas', monospace;
+}
+
+.container{
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.error{
+    color:red;
+    font-weight: bold;
+}
+
+
+main{
+    background-color:#e0dcbe;
+    background:linear-gradient(to right bottom,#FFFFFF,#E0DCBE);
+    min-height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    margin-left: auto;
+    margin-right:auto;
+    min-height:50vh;
+    grid-gap:50px;
+    padding:50px;
+}
+
+.grid{
+
+}
+
+.title{
+    margin-top:0px;
+    color:#181818;
+    font-family: 'Roboto';
+    font-weight: bold;
+    
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 150%;
+}
+@media screen and (min-width:1367px){
+    .title{
+        font-size: 5rem;
+        line-height: 7.5rem;
+    }
+}
+
+.introduction,
+.text{
+    color:#181818;
+    line-height: 1.5rem;
+    font-family: 'Montserrat';
+}
+
+@media screen and (min-width:1367px){
+    .introduction,
+    .text{
+        width:55%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.introduction{
+    font-size:1.4rem;
+    line-height:2rem;
+    font-weight: bold;
+}
+
+.text{
+    
+    color:#181818;
+}
+p{
+    margin-bottom:1.5rem;
+}

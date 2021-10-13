@@ -1,0 +1,78 @@
+:root{
+    font-size: 16px;
+    line-height:1.5em;
+}
+body {
+    margin: 0px;
+    overflow-x: hidden;
+    font-family: serif;
+}
+
+pre{
+    background-color:black;
+    border:1px dashed gray;
+    padding:5px;
+    color:white;
+    display:block;
+    border-radius: 5px;
+    font-family: 'Consolas', monospace;
+}
+
+.container{
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.error{
+    color:red;
+    font-weight: bold;
+}
+
+h1{
+    font-family: 'Fugaz One';
+    font-weight: normal;
+    
+    font-size: 2rem;
+}
+.title-1{
+    color:khaki;
+}
+.title-2{
+    color:lightcoral;
+}
+
+section{
+    min-height:100vh;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+.background{
+    z-index: -1;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;    
+    background-size:cover;
+    background-color:lightcoral;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%);
+}
+.background-2{
+    z-index: -1;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;    
+    background-size:cover;
+    background-color:khaki;
+    clip-path: polygon(25% 0, 0 50%, 0 100%, 75% 100%, 100% 50%, 100% 0%);
+}
+.background-2:hover{
+    clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%);
+}

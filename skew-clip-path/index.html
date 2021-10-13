@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <title>Skew !</title>
+</head>
+<body>
+    <section>
+        <div class="background"></div>
+        <h1 class="title-1">Skew clip path</h1>
+        <pre><code>
+section{
+    min-height:100vh;
+    position: relative;
+    ...
+}
+.background{
+    z-index: -1;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;    
+    background-color:lightcoral;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%);
+}
+        </code></pre>
+    </section>
+
+
+    <section>
+        <div class="background-2"></div>
+        <h1 class="title-2">Hey salut toi !</h1>
+        <p>Toi aussi teste des formes sur <a href="https://bennettfeely.com/clippy/" target="blank">https://bennettfeely.com/clippy/</a></p>
+    </section>
+    
+</body>
+</html>
