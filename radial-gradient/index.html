@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Base</title>
+</head>
+<body>
+    <section id="Demo" class="grid">
+        <div class="heading-row">
+            <h1 class="title">Dégradés radials</h1>
+        </div>
+        <div class="content-row">
+            <div class="place">
+                <h2>Le classique</h2>
+                <div class="grd grd-1"></div>
+                <pre><code>
+background: radial-gradient(#e66465, #9198e5);                    
+                </code></pre>
+            </div>
+            <div class="place">
+                <h2>Closest Side</h2>
+                <div class="grd grd-2"></div>
+                <pre><code>
+background: radial-gradient(closest-side, #e66465, #9198e5);
+                </code></pre>
+            </div>
+            <div class="place">
+                <h2>Circle at</h2>
+                <div class="grd grd-3"></div>
+                <pre><code>
+background: radial-gradient(circle at 50%,#e66465, #9198e5);
+                </code></pre>
+            </div>
+            <div class="place">
+                <h2>Closest Corner</h2>
+                <div class="grd grd-4"></div>
+                <pre><code>
+background: radial-gradient(closest-corner, #e66465, #9198e5);
+                </code></pre>
+            </div>
+            <div class="place">
+                <h2>Multiple</h2>
+                <div class="grd grd-5"></div>
+                <pre><code>
+background: 
+    radial-gradient(ellipse at top left, navy, transparent),
+    radial-gradient(ellipse at bottom right, crimson, transparent)
+;
+                </code></pre>
+                <p class="error">La syntaxe <i>at</i> n'est pas supportée par Safari.</p>
+            </div>
+            <div class="place">
+                <h2>Multiple background-position</h2>
+                <div class="grd grd-6"></div>
+                <pre><code>
+background:url('../img/img-16.jpg') center center / cover no-repeat padding-box border-box red;
+background-blend-mode:luminosity;
+                </code></pre>
+                <p class="error">Ceci n'est pas un dégradé, mais bon...</p>
+                <p>Combinaison propriété shorthand et <strong>background-blend-mode</strong></p>
+            </div>
+            <div class="place">hey</div>
+            <div class="place">hey</div>
+            <div class="place">hey</div>
+        </div>
+    </section>
+</body>
+</html>

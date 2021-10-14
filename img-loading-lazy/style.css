@@ -1,0 +1,42 @@
+body {
+    margin: 0px;
+}
+
+pre{
+    background-color:black;
+    border:1px dashed gray;
+    padding:5px;
+    color:white;
+    display:block;
+    border-radius: 5px;
+    font-family: 'Consolas', monospace;
+}
+
+.container{
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.error{
+    color:red;
+    font-weight: bold;
+}
+
+section{
+    min-height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#Home{
+    background-color: navy;
+    background: linear-gradient(to right bottom,navy,black);
+    color:white;
+}
+
+#Demo{
+    background-color: hotpink;
+}

@@ -1,0 +1,107 @@
+body {
+    margin: 0px;
+    font-family: 'Prata';
+}
+
+pre{
+    background-color:black;
+    border:1px dashed gray;
+    padding:5px;
+    color:white;
+    display:block;
+    border-radius: 5px;
+    font-family: 'Consolas', monospace;
+}
+
+.container{
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.error{
+    color:red;
+    font-weight: bold;
+}
+
+#Demo{
+    background-color: tan;
+    min-height: 100vh;
+    display:grid;
+    grid-template-rows: auto 1fr;
+}
+
+.heading-row{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.content-row{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grd{
+    border:1px solid black;
+    min-height: 200px;
+}
+.place{
+    padding:15px;
+    border:1px dashed black;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin:15px;
+    font-family: 'Hammersmith One', sans-serif;
+}
+h2{
+    text-align: center;
+}
+
+.img{
+    background:
+        url('../img/img-9.jpg') 
+        center center / cover
+        no-repeat,
+        fixed,
+        padding-box,
+        content-box,
+        mediumblue
+    ;
+    min-height: 300px;
+}
+
+.bbm-multiply{
+    background-blend-mode: multiply;
+}
+
+.bbm-screen{
+    background-blend-mode:screen;
+}
+
+.bbm-overlay{
+    background-blend-mode: overlay;
+}
+
+.bbm-darken{
+    background-blend-mode: darken;
+}
+
+.bbm-lighten{
+    background-blend-mode: lighten;
+}
+
+.bbm-color-dodge{
+    background-blend-mode: color-dodge;
+}
+
+.bbm-saturation{
+    background-blend-mode: saturation;
+}
+.bbm-color{
+    background-blend-mode: color;
+}
+
+.bbm-luminosity{
+    background-blend-mode: luminosity;
+}

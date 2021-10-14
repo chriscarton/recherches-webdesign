@@ -1,0 +1,34 @@
+body {
+    margin: 0px;
+}
+
+pre{
+    background-color:black;
+    border:1px dashed gray;
+    padding:5px;
+    color:white;
+    display:block;
+    border-radius: 5px;
+    font-family: 'Consolas', monospace;
+}
+
+.container{
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.error{
+    color:red;
+    font-weight: bold;
+}
+
+.somebackground{
+    margin-top:150px;
+    border:1px dashed black;
+    min-height: 750px;
+background:
+    linear-gradient(to bottom right, #eb01a5 30%, transparent 50%) no-repeat left top / 100%, 
+    url("../img/img-11.jpg") no-repeat center center / cover     
+;
+}
