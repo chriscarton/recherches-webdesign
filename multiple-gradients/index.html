@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Base</title>
+</head>
+<body>
+    <section id="Home">
+        
+        <div class="container">
+            <h1>Hello</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam a laudantium voluptate, soluta temporibus illum, at inventore blanditiis, dolor fuga dolore nemo velit distinctio repudiandae enim doloremque voluptatum fugiat porro.</p>
+            <pre><code>
+background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);    
+            </code></pre>
+
+            <h2>Voici un autre dégradé</h2>
+            <div class="dual">
+                <div class="another-gradient"></div>
+                <img src="circle.jpg" alt="">
+            </div>
+
+            <div>
+                <pre><code>
+background:
+    linear-gradient(0deg, red 50%, transparent 70%),
+    linear-gradient(120deg, green 50%, transparent 70%),
+    linear-gradient(240deg, blue 50%, transparent 70%)
+;
+                </code></pre>
+            </div>
+            <h3>Ordre d'empilement : du premier déclaré (red) au dernier (blue)</h3>
+
+            <div class="dual">
+                <ul>
+                    <li>0° monte (vers 180°)</li>
+                    <li>120° descend...</li>
+                    <li>240° descend...</li>
+                </ul>
+                <div class="explainations">
+                    <p>Tout ce qui est entre <strong>0° et 90°</strong> <u>monte</u> du quart en bas à gauche.</p>
+                    <p>Tout ce qui est entre <strong>90° et 180°</strong> <u>descend</u> du quart en haut à gauche.</p>
+                    <p>Tout ce qui est entre <strong>180° et 270°</strong> <u>descend</u> du quart en haut à droite.</p>
+                    <p>Et enfin tout ce qui est entre <strong>270° et 360°</strong> <u>monte</u> du quart en bas à droite.</p>
+                </div>      
+            </div>
+
+            <h2>Exemple 4 dégradés</h2>
+
+            <div class="dual">
+                <div class="stacked-gradients"></div>
+                <img src="circle.jpg" alt="">
+
+                <ul>
+                    <li style="background-color:chartreuse">CHARTREUSE</li>
+                    <li style="background-color: crimson;">CRIMSON</li>
+                    <li style="background-color:deepskyblue">DEEPSKYBLUE</li>
+                    <li style="background-color:sienna">SIENNA</li>
+                </ul>
+                <pre>
+                    <code>
+background:
+    linear-gradient(45deg, chartreuse 10%, transparent 50%), 
+    linear-gradient(135deg, crimson 10%, transparent 50%), 
+    linear-gradient(225deg, deepskyblue 10%, transparent 50%), 
+    linear-gradient(315deg, sienna 10%, transparent 50%)
+;
+                    </code>
+                </pre>
+            </div>
+    </section>
+</body>
+</html>

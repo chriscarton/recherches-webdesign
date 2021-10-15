@@ -1,0 +1,71 @@
+body {
+    margin: 0px;
+}
+
+pre{
+    background-color:black;
+    border:1px dashed gray;
+    padding:5px;
+    color:white;
+    display:block;
+    border-radius: 5px;
+    font-family: 'Consolas', monospace;
+}
+
+.container{
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.error{
+    color:red;
+    font-weight: bold;
+}
+
+h1{
+    margin:0px;
+}
+
+#Home{
+    min-height: 100vh;
+    background:
+        linear-gradient(217deg,rgba(212, 197, 54, 0.8), rgba(0, 128, 128, 0) 70%),
+        linear-gradient(127deg, rgba(173, 125, 61, 0.8), rgba(128, 0, 0, 0) 70%),
+        linear-gradient(336deg, rgba(80, 44, 165, 0.8), rgba(184, 21, 48, 0) 70%)
+    ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dual{
+    display:grid;
+    /* grid-template-columns:repeat(2,minmax(0,1fr)); */
+
+
+    grid-template-columns: repeat(2,minmax(0,1fr));
+}
+.another-gradient{
+    height:300px;
+    width:300px;
+    border:2px dashed black;
+    background:
+        linear-gradient(0deg, red 50%, transparent 70%),
+        linear-gradient(120deg, green 50%, transparent 70%),
+        linear-gradient(240deg, blue 50%, transparent 70%)
+    ;
+}
+
+
+.stacked-gradients{
+    height:300px;
+    width:300px;
+    border:2px dashed black;
+    /* chartreuse, crimson, deepskyblue, sienna */
+    background:
+        linear-gradient(45deg, chartreuse 10%, transparent 50%), 
+        linear-gradient(135deg, crimson 10%, transparent 50%), 
+        linear-gradient(225deg, deepskyblue 10%, transparent 50%), 
+        linear-gradient(315deg, sienna 10%, transparent 50%)
+    ;
+}
