@@ -8,24 +8,76 @@
     <title>Font list</title>
 </head>
 <body>
+<header>
+    <h2 id="mainTitle">Font list</h2>
     
-
-
-    <h2>Font list</h2>
-
     <nav id="categoriesNav">
-        <button class="btn-category">Serif</button>
-        <button class="btn-category">Sans Serif</button>
-        <button class="btn-category">Display</button>
-        <button class="btn-category">Handwriting</button>
-        <button class="btn-category">Monospace</button>
+        <button class="btn-category serif">Serif</button>
+        <button class="btn-category sans-serif active">Sans-Serif</button>
+        <button class="btn-category display">Display</button>
+        <button class="btn-category handwriting">Handwriting</button>
+        <button class="btn-category monospace">Monospace</button>
     </nav>
+    <div id="currentLetter">
+        ?
+    </div>
+</header>
 
-    <div id="fontList"></div>
+    <div id="Playground">
+        <a id="playgroundClose">x</a>
+        <div class="row">
+            <h1 title="" class="title">Titre</h1>
+            <button class="apply-font">←</button>
+        </div>
+        <div class="row">
+            <h3 title="" class="subtitle">Sous-titre</h3>
+            <button class="apply-font">←</button>
+        </div>
+        <div class="row">
+            <p title="" class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis earum dolores necessitatibus amet distinctio. Itaque molestias.</p>
+            <button class="apply-font">←</button>
+        </div>
+        <div class="row">
+            <div title="" class="text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repellat amet accusamus est, quisquam ipsam quibusdam magnam doloribus consequatur voluptates eaque, minima unde eius perferendis delectus minus nostrum eligendi animi.</p>
+                <p>Nemo alias maxime autem reprehenderit neque animi qui facilis veritatis adipisci quae earum fuga maiores nostrum quos aliquam laborum praesentium eveniet, nobis obcaecati vel possimus rem hic quam est! Unde.</p>
+                <p>Optio facilis exercitationem adipisci, doloribus rem dolore deleniti ut sunt eius esse expedita sed aspernatur quas. Error maiores reprehenderit reiciendis ducimus ullam blanditiis inventore, laboriosam quia esse accusamus minima sint.</p>
+            </div>
+            <button class="apply-font">←</button>
+        </div>
+    </div>
 
-    <nav id="abcNav">
+    <div id="fontList">
+        <p class="message">SVP sélectionnez une lettre.</p> 
+        <!-- Ce message n'apparaît plus -->
+    </div>
 
-    </nav>
+    <nav id="abcNav"></nav>
+
+    <div id="quotesList">
+        <a class="author active">Allan Watts</a>
+        <div class="quote">Ceci est le véritable secret de la vie : être complètement engagé avec ce que vous faites ici et maintenant. Et au lieu d'appeler cela travailler, réaliser que c'est jouer.</div>
+        <a class="author">Morpheus</a>
+        <div class="quote">
+            La Matrice est universelle. Elle est omniprésente. Elle est avec nous ici, en ce moment même. Tu la vois chaque fois que tu regardes par la fenêtre ou lorsque tu allumes la télévision. Tu ressens sa présence quand tu pars au travail, quand tu vas à l’église ou quand tu paies tes factures. Elle est le monde qu’on superpose à ton regard pour t’empêcher de voir la vérité.
+        </div>
+        <a class="author">Andy Dufresnes</a>
+        <div class="quote">
+            Dépêche toi de vivre, ou dépêche toi de mourir. C'est fichtrement vrai. Brooks était ici, Red aussi. Pour la deuxième fois de ma vie je suis coupable d'un crime : violation de liberté conditionnelle.
+        </div>
+        <a class="author">Friedrich Nietzsche</a>
+        <div class="quote">
+            Il n'y a pas de phénomènes moraux, rien qu'une interprétation morale des phénomènes.
+        </div>
+        <a class="author">Paul Auster</a>
+        <div class="quote">
+            La plupart des gens ne font pas attention. Ils voient les mots comme des rocs, de grands objets impossibles à déplacer et sans vie, des nomades qui ne changent jamais.
+        </div>
+        <div class="author">Docteur Manhattan</div>
+        <div class="quote">
+            Je préfère l'immobilité qui règne ici. Je suis fatigué de la Terre, de ces gens, fatigué d'être pris dans la confusion de leur existence. Ils prétendent s'acharner à bâtir un paradis, et voici que leur paradis est peuplé d'horreurs. Peut-être que le monde n'est-il pas fait, peut-être que rien n'est fait, une horloge sans artisan. Il est trop tard, il a toujours été, et il sera toujours trop tard.
+        </div>
+    </div>
 
     <script src="jquery-3.6.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
