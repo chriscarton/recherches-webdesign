@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Grid | Self</title>
+</head>
+<body>
+    <header>
+        <h1>Propriétés items</h1>
+        <p>Détermine l'emplacement des colonnes <b>à l'intérieur</b> des cellules de la grille !</p>
+        <ul>
+            <li>align-items (row axis)</li>
+            <li>justify-items (column axis)</li>
+            <li>place-items ? (si on a les deux mêmes valeurs !)</li>
+        </ul>
+    </header>
+    <div class="page" id="pageItems1">
+        <h1>Align Items</h1>
+        <div class="grid">
+            <div class="col col-1">Colonne 1</div>
+            <div class="col col-2">Colonne 2</div>
+            <div class="col col-3">Colonne 3</div>
+            <div class="col col-4">Colonne 4</div>
+            <div class="col col-5">Colonne 5</div>
+            <div class="col col-6">Colonne 6</div>
+            <div class="col col-7">Colonne 7</div>
+            <div class="col col-8">Colonne 8</div>
+            <div class="col col-9">Colonne 9</div>
+        </div>
+    </div>
+
+    <div class="page" id="pageItems2">
+        <h1>Justify Items</h1>
+        <div class="grid">
+            <div class="col col-1">Colonne 1</div>
+            <div class="col col-2">Colonne 2</div>
+            <div class="col col-3">Colonne 3</div>
+            <div class="col col-4">Colonne 4</div>
+            <div class="col col-5">Colonne 5</div>
+            <div class="col col-6">Colonne 6</div>
+            <div class="col col-7">Colonne 7</div>
+            <div class="col col-8">Colonne 8</div>
+            <div class="col col-9">Colonne 9</div>
+        </div>
+    </div>
+
+    <div id="Tips">
+        <div class="container">
+        <p>Align items et Justify Items s'appliquent sur la grille. Ces propriétés globales déterminent comment <strong>tous</strong> les éléments vont se placer dans la grille.</p>
+        <ul>
+            <li>start</li>
+            <li>end</li>
+            <li>center</li>
+            <li>stretch (par défaut)</li>
+        </ul>
+<pre>
+    <code>
+#pageItems1 .grid{
+    align-items: end;
+}
+#pageItems2 .grid{
+    justify-items: end;
+}
+    </code>
+</pre>
+        <p>La propriété Place Items existe et peut-être utilisée si les deux valeurs correspondent.</p>
+        </div>
+    </div>
+
+    <nav id="mainMenu">
+        <a href="index.html">Simple grid</a>
+        <a href="grid-start-end.html">Début et fin de grille</a>
+        <a href="offset.html">Offset</a>
+        <a href="auto.html">auto</a>
+        <a href="content.html">Alignement (content)</a>
+        <a href="place-content.html">Place Content</a>
+        <a href="items.html">Alignement (items)</a>
+        <a href="self.html">Propriétés Self</a>
+    </nav>
+</body>
+</html>
