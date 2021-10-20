@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Animation</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Animation !</h1>
+        <div class="test">
+            <div class="square">square</div>
+        </div>
+<pre><code>animation: anim 5s ease-in-out 2s infinite alternate;</code></pre>
+        <table>
+            <tr>
+                <th>Propriété</th>
+                <th>Valeur</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>animation-name</td>
+                <td>anim</td>
+                <td>anim est le nom de l'animation</td>
+            </tr>
+            <tr>
+                <td>animation-timing-function</td>
+                <td>
+                    ease-in<br>
+                    <b>ease-out</b><br>
+                    ease-in-out<br>
+                    linear<br>
+                </td>
+                <td>
+                    Accélération vers le début<br>
+                    Accélération vers la fin<br>
+                    Linéaire<br>
+                </td>
+            </tr>
+            <tr>
+                <td>animation-delay</td>
+                <td>3s</td>
+                <td>Commence à partir de 3s</td>
+            </tr>
+            <tr>
+                <td>animation-iteration-count</td>
+                <td>
+                    5<br>
+                    <b>infinite</b><br/>
+                </td>
+                <td>
+                    Répète 5 fois l'animation<br>
+                    À l'infini
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    animation-direction
+                </td>
+                <td>
+                    normal<br>
+                    reverse<br>
+                    <b>alternate</b><br>
+                    alternate-reverse<br>
+                </td>
+                <td>
+                    Normal <br>
+                    À l'envers <br>
+                    À l'endroit et à l'envers <br>
+                    À l'envers puis à l'endroit
+                </td>
+            </tr>
+        </table>
+
+        <h2>Autres propriétés</h2>
+        <table>
+            <tr>
+                <th>Propriété</th>
+                <th>Valeurs</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>
+                    animation-fill-mode
+                </td>
+                <td>
+                    none<br>
+                    forwards<br>
+                    backwards<br>
+                    both
+                </td>
+                <td>
+                    Ne prends pas de style à la fin<br>
+                    Prends le style de la dernière keyframe<br>
+                    Prends le style de la première keyframe<br>
+                    Prends le style des deux
+                </td>
+            </tr>
+            <tr>
+                <td>animation-play-state</td>
+                <td>
+                    pause<br>
+                    running<br>
+                </td>
+                <td>
+                    div:hover {animation-play-state: paused;}<br>
+                    ...
+                </td>
+            </tr>
+        </table>
+
+        <h2>Combiner plusieurs animations différentes</h2>
+<pre><code>animation-name: fadeInOut, moveLeft300px, bounce;
+animation-duration: 2.5s, 5s, 1s;
+animation-iteration-count: 2, 1, 5;</code></pre>
+
+        <h2>Évènements JavaScript</h2>
+<pre><code>var element = document.getElementById("watchme");
+element.addEventListener("animationstart", listener, false);
+element.addEventListener("animationend", listener, false);
+element.addEventListener("animationiteration", listener, false);</code></pre>
+    </div>
+</body>
+</html>

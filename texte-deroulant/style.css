@@ -1,0 +1,81 @@
+body {
+    margin: 0px;
+    background-color: burlywood;
+}
+
+pre{
+    background-color:black;
+    border:1px dashed gray;
+    padding:5px;
+    color:white;
+    display:block;
+    border-radius: 5px;
+    font-family: 'Consolas', monospace;
+}
+
+.container{
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.error{
+    color:red;
+    font-weight: bold;
+}
+
+.marquee-container{
+    display:flex;
+    align-items: center;
+    background:linear-gradient(to right,darksalmon,rebeccapurple);
+    color:white;
+    overflow:hidden;
+    margin-block: 50px;
+}
+
+.marquee{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: clamp(32px,10vw,3.5rem);
+    padding-block: 50px;
+    animation:marquee 10s infinite linear 1s;
+    white-space:nowrap;
+}
+.marquee:after{
+    /* faut que ce soit exactement le même texte */
+    content:"LE WEBDESIGN C'EST VRAIMENT TROP COOL.";
+}
+@keyframes marquee{
+    0%{
+        transform:translateX(0);
+    }
+    100%{
+        transform:translateX(-50%);
+    }
+}
+
+
+.marquee-container-2{
+    display:flex;
+    align-items: center;
+    background:linear-gradient(to right,navy,darkorange);
+    color:white;
+    overflow:hidden;
+    margin-block: 50px;
+}
+.marquee-2{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: clamp(32px,10vw,3.5rem);
+    padding-block: 50px;
+    animation:marquee 10s infinite linear 1s;
+    white-space:nowrap;
+}
+.marquee-2:after{
+    content:attr(data-content);
+}
+/*
+<div class="marquee-container-2">
+    <div class="marquee-2" data-content="ON EST PAS BIEN LÀ ?"></div>
+</div>
+*/

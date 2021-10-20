@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bike SVG</title>
+</head>
+<body>
+    <div id="Demo">
+        <div w3-include-html="bike.svg"></div>
+    </div>
+    <div id="Tips">
+        <h1>Export Affinity Designer</h1>
+        <p>Cliquer sur more > Cocher : Flatten Transforms</p>
+        <p>Selection Area > <strong>Selection Only</strong></p>
+    </div>
+    <div id="Css">
+<h1>Animation Css</h1>
+<p>Noter l'utiliser de la propriété <i>transform-box</i>.</p>
+        <pre>
+            <code>
+#roueAvant{
+    animation:motion 2s infinite linear;
+    transform-origin:center;
+    transform-box:fill-box;
+}
+
+#roueArriere{
+    animation:motion 2s infinite linear;
+    transform-origin:center;
+    transform-box:fill-box;
+}
+
+#PedalePP{
+    transform-origin:center bottom;
+    animation:motion 3s infinite linear;
+    transform-box:fill-box;
+    backface-visibility: hidden;
+}
+
+#PedaleAP{
+    transform-origin:center top;
+    animation:motion 3s infinite linear;
+    transform-box:fill-box;
+    backface-visibility: hidden; 
+}
+
+#Pedalier{
+    animation:motion 3s infinite linear;
+    transform-box:fill-box;
+    transform-origin:center center;
+}
+
+@keyframes motion{
+    from{
+        transform:rotateZ(360deg);
+    }
+    to{
+        transform:rotateZ(0deg);
+    }
+}
+            </code>
+        </pre>
+        <p class="error">Ne pas prévoir d'animer des éléments enfants d'élements parents déjà animés. Car c'est totalement broken sous Firefox.</p>
+    </div>
+</body>
+
+<script src="include-html.js"></script>
+<script>includeHTML();</script>
+</html>

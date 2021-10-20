@@ -1,0 +1,124 @@
+body {
+    margin: 0px;
+    
+}
+*{
+    box-sizing: border-box;
+}
+pre{
+    background-color:black;
+    border:1px dashed gray;
+    padding:5px;
+    color:white;
+    display:block;
+    border-radius: 5px;
+    font-family: 'Consolas', monospace;
+}
+
+.container{
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.error{
+    color:red;
+    font-weight: bold;
+}
+
+#Demo{
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(to right bottom, #be0d00, #360000);
+    background:linear-gradient(to right bottom, #be0d00, #000000);
+}
+
+svg{
+    height:85vh;
+}
+
+#roueAvant{
+    animation:motion 2s infinite linear;
+    transform-origin:center;
+    transform-box:fill-box;
+}
+
+#roueArriere{
+    animation:motion 2s infinite linear;
+    transform-origin:center;
+    transform-box:fill-box;
+}
+
+#PedalePP{
+    transform-origin:center bottom;
+    animation:motion 3s infinite linear;
+    transform-box:fill-box;
+    backface-visibility: hidden;
+}
+
+#PedaleAP{
+    transform-origin:center top;
+    animation:motion 3s infinite linear;
+    transform-box:fill-box;
+    backface-visibility: hidden; 
+}
+
+#Pedalier{
+    animation:motion 3s infinite linear;
+    transform-box:fill-box;
+    transform-origin:center center;
+}
+/*
+#plateformePP, #plateformeAP{
+    animation: motion 3s infinite linear reverse;
+    transform-origin:center center;
+    transform-box:fill-box;
+    
+} 
+*/
+
+
+
+@keyframes motion{
+    from{
+        transform:rotateZ(360deg);
+    }
+    to{
+        transform:rotateZ(0deg);
+    }
+}
+
+
+
+#Tips{
+    background-color: rgba(0, 0, 0, 0.85);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:wheat;
+    text-align: center;
+}
+#Css{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: tan;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-size: 2rem;
+    margin:0px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+h2{font-size:1.8rem;}
+h3{font-size:1.6rem;}
+h4{font-size:1.4rem;}
+h5{font-size:1.2rem;}
+h6{font-size: 1.1rem;}
