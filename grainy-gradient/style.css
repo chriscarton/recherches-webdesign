@@ -1,0 +1,78 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: chocolate;
+}
+
+pre{
+    background-color:black;
+    border:1px dashed gray;
+    padding:5px;
+    color:white;
+    display:block;
+    border-radius: 5px;
+    font-family: 'Consolas', monospace;
+}
+
+.container{
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+    z-index: 1;
+    padding:2rem;
+    color:white;
+    margin-block: 2rem;
+}
+
+.error{
+    color:red;
+    font-weight: bold;
+}
+
+.grainy-gradient{
+    isolation: isolate;
+    position:absolute;
+    inset:0;
+    z-index: -1;
+    
+}
+
+.grainy-gradient::before {
+    content:' ';
+    background:
+        linear-gradient(to right, red, transparent),
+        url(filter-noise.svg);
+    color:white;
+    /* MORE NOISE */
+    filter: contrast(500%) brightness(1000%);
+    position:absolute;
+    inset:0; 
+    z-index:0; 
+}
+
+.grainy-gradient::after {
+    content:' '; 
+    position:absolute;
+    inset:0; 
+    z-index:0;
+    /* MÊME COULEUR QUE LE FOND */
+    background:chocolate;
+    mix-blend-mode:multiply;
+} 
+
+h1{
+    text-transform: uppercase;
+}
+p{
+    font-size: 1.2rem;
+}
+
+.info{
+    width:75%;
+    margin:0 auto;
+    background:cornflowerblue;
+    padding:2rem;
+    color:whitesmoke;
+    margin-block:2rem;
+}

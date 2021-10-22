@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Grainy Gradient</title>
+</head>
+<body>
+
+
+
+<div class="container">
+    <h1>Grainy Gradient</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium repellendus quasi! Eveniet, ex iure dolore eligendi reprehenderit error omnis fugit reiciendis totam quam odit quo voluptatibus praesentium! Numquam, asperiores!<br>
+    Alias magnam itaque, id laboriosam magni possimus quisquam ullam iusto tenetur maiores vero inventore totam, aut deserunt. Obcaecati harum autem labore! Dolorem eum nisi rem perferendis autem commodi inventore laboriosam!<br>
+    Temporibus maiores aliquam vitae, in architecto nobis dicta quis repellat ex laborum ducimus beatae aspernatur officiis modi itaque! Possimus obcaecati quidem magni dignissimos, natus ipsum velit corporis explicabo qui cupiditate?</p>
+
+<h1>Element SVG à inclure dans le Css via url</h1>
+<pre>
+<code>&lt;svg viewBox=&quot;0 0 200 200&quot; xmlns='http://www.w3.org/2000/svg'&gt;
+    &lt;filter id='noiseFilter'&gt;
+        &lt;feTurbulence 
+        type='fractalNoise' 
+        baseFrequency='3.65' 
+        numOctaves='3' 
+        stitchTiles='stitch' /&gt;
+    &lt;/filter&gt;
+    
+    &lt;rect width='100%' height='100%' filter='url(#noiseFilter)' /&gt;
+&lt;/svg&gt;</code>
+</pre>
+
+<h2>Structure HTML</h2>
+<pre><code>body > container > sometext + div.grainy-gradient</code></pre>
+<h2>Css</h2>
+<pre><code>body {
+    background-color: chocolate;
+}
+.grainy-gradient{
+    isolation: isolate;
+    position:absolute;
+    inset:0;
+    z-index: -1;
+}
+.grainy-gradient::before {
+    content:' ';
+    background:
+        linear-gradient(to right, red, transparent),
+        url(filter-noise.svg);
+    color:white;
+    /* MORE NOISE */
+    filter: contrast(500%) brightness(1000%);
+    position:absolute;
+    inset:0; 
+    z-index:0; 
+}
+.grainy-gradient::after {
+    content:' '; 
+    position:absolute;
+    inset:0; 
+    z-index:0;
+    /* MÊME COULEUR QUE LE FOND */
+    background:chocolate;
+    mix-blend-mode:multiply;
+} </code></pre>
+
+    <div class="grainy-gradient"></div>
+</div>
+
+<div class="info">
+    <h1>Comment ça marche ?</h1>
+    <p>
+        <i>grainy-gradient::before</i> a un dégradé qui va vers du <strong>transparent</strong><br>
+        <i>body</i> et <i>grainy-gradient::after</i> ont le même background.<br>
+        <i><i>grainy-gradient::after</i> a la propriété mix-blend-mode:multiply.<br>
+    </p>
+
+    <h2>Attention</h2>
+    <p>Plus l'élément couvert par le dégradé est haut plus il faudra augmenter <strong>baseFrequency</strong> dans le <strong>svg</strong></p>
+<pre><code>baseFrequency='3.65'</code></pre>
+</div>
+</body>
+</html>
