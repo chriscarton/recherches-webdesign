@@ -69,3 +69,20 @@ h1{
         linear-gradient(315deg, sienna 10%, transparent 50%)
     ;
 }
+.color-list span{
+    width:25px;
+    height: 25px;
+    display:inline-block;
+}
+.color-list li:nth-child(1) span{
+    background:chartreuse;
+}
+.color-list li:nth-child(2) span{
+    background:crimson;
+}
+.color-list li:nth-child(3) span{
+    background:deepskyblue;
+}
+.color-list li:nth-child(4) span{
+    background:sienna;
+}

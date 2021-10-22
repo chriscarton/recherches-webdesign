@@ -22,3 +22,8 @@ pre{
     color:red;
     font-weight: bold;
 }
+
+canvas{
+    border:1px solid darkslateblue;
+}
+

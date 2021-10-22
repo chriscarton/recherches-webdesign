@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flex Grow / Flex Shrink</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Flex Grow / Flex Shrink</h1>
+<pre><code>.flex-item{
+    width:200px;
+}</code></pre>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item">
+<pre><code>flex-shrink:0;</code></pre>
+            <p>Ne peut pas rétrécir à moins de 200px</p>
+        </div>
+        <div class="flex-item">
+            Peut rétrecir à moins de 200px, mais peut aussi s'aggrandir au-delà.
+<pre><code>flex-grow:1;</code></pre>
+        </div>
+        <di class="flex-item">
+            Ne peut pas s'aggrandir à plus de 200px.
+<pre><code>flex-grow:0;</code></pre>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Voilà tout</h1>
+    </div>
+</body>
+</html>
