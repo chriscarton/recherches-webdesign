@@ -11,9 +11,38 @@
     <div class="container">
         <h1>Animation !</h1>
         <div class="test">
-            <div class="square">square</div>
+            <div class="square" id="square">square</div>
         </div>
-<pre><code>animation: anim 5s ease-in-out 2s infinite alternate;</code></pre>
+<!-- <pre><code>animation: anim 5s ease-in-out 2s infinite alternate;</code></pre> -->
+<pre><code id="animationCode">animation: anim 5s ease-in-out 2s infinite alternate;</code></pre>
+
+        <form>
+            <label for="input-duration">Durée : <input type="number" name="input-duration" class="input-duration" value="5"></label>
+            <label for="input-timing-function">
+                Fonction temporelle : 
+                <select name="timing-function" class="input-timing-function">
+                    <option value="ease-in">Ease In</option>
+                    <option value="ease-out">Ease Out</option>
+                    <option value="ease-in-out" selected>Ease In Out</option>
+                    <option value="linear">Linear</option>
+                </select>
+            </label>
+            <label for="input-delay">Délai : <input type="number" name="input-delay" class="input-delay" value="2"></label>
+            <label for="input-iteration-count">
+                Nombre d'itération :
+                <input type="number" name="iteration-count" class="input-iteration-count">
+            </label>
+            <label for="input-infinite">Infini ?<input name="infinite" class="input-infinite" type="checkbox" checked></label>
+            <label for="input-input-direction">
+                <select name="direction" class="input-direction">
+                    <option value="normal">Normal</option>
+                    <option value="reverse">Reverse</option>
+                    <option value="alternate" selected>Alternate</option>
+                    <option value="alternate-reverse">Alternate Reverse</option>
+                </select>
+            </label>
+        </form>
+
         <table>
             <tr>
                 <th>Propriété</th>
@@ -122,5 +151,7 @@ element.addEventListener("animationstart", listener, false);
 element.addEventListener("animationend", listener, false);
 element.addEventListener("animationiteration", listener, false);</code></pre>
     </div>
+    <script src="../jquery.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

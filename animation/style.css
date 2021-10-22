@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    font-family: sans-serif;
 }
 
 pre{
@@ -48,4 +49,18 @@ td, th{
     to{
         transform:translateX(500px);
     }
+}
+
+form{
+    background-color:goldenrod;
+    padding:25px;
+    margin-bottom:25px;
+}
+input,select{
+    padding:5px;
+    border-radius:5px;
+    border:0px;
+}
+input[type="number"]{
+    width:50px;
 }

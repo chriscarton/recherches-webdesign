@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Selecteurs Css</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tout et tout dans</h1>
+<pre><code>*{
+    margin:0;
+    padding:0
+}</code></pre>
+<pre><code>.container *{
+    border:1px dashed red;
+}</code></pre>
+        <h1>Sélecteur adjacent</h1>
+<pre><code>ul+p{
+    color:red;
+}</code></pre>
+<p>Cible le premier élément qui est précédé (ici le premier paragraphe après la liste).</p>
+
+<div class="exemple exemple-1">
+    <ul>
+        <li>Volvo</li>
+        <li>Mercedes</li>
+        <li>Peugeot</li>
+        <li>Renault</li>
+    </ul>
+    <p>Voici plein de voiture.</p>
+    <p>Mais elles polluent beaucoup.</p>
+    <p>Et font chier les cyclistes.</p>
+</div>
+
+<h2>Sélecteur Tilde ~</h2>
+<pre><code>.exemple-2 ul~p{
+    border:5px dashed darksalmon;
+    padding:5px;
+}</code></pre>
+
+<p>Comme le sélecteur + sauf qu'il cible tous les éléments après.</p>
+
+<div class="exemple exemple-2">
+    <p>Ici un nouveau texte commence.</p>
+    <ul>
+        <li>Soudainement une liste apparaît.</li>
+        <li>Elle affiche des informations diverses.</li>
+        <li>Le lecteur est perdu.</li>
+        <li>Finalement, il ferme l'ordinateur.</li>
+    </ul>
+    <p>Nous ne saurons jamais la fin de cette histoire.</p>
+    <p>Mais nous savons bien que...</p>
+    <p>Tout était déjà plié dès le début.</p>
+</div>
+
+<h2>Selecteur Attribut</h2>
+<pre><code>a[title]{
+    color:green;
+}</code></pre>
+<h2>Selecteur Attribut+Valeur</h2>
+<pre><code>a[title="Un beau titre !"]{
+    color:green;
+}</code></pre>
+
+<h2>Sélecteur Attribut doit <u>comporter</u> Valeur</h2>
+<pre><code>
+    a[href*="chris-carton"]{
+        color:chocolate;
+        font-size:2rem;
+        color:white;
+    }
+</code></pre>
+
+<div class="exemple exemple-3">
+    <a href="http://www.kevin-cage.com">www.kevin-cage.com</a>
+    <a href="http://www.chris-carton.com">www.chris-carton.com</a>
+    <a href="http://www.jean-belmont.com">www.jean-belmont.com</a>
+    <a href="http://www.simon-dujardin.com">www.simon-dujardin.com</a>
+    <a href="http://www.kate-novak.com">www.kate-novak.com</a>
+</div>
+
+<h2>Selecteur Attribut doit <u>commencer</u> par valeur</h2>
+<pre><code>a[href^="http"] {
+    background: url(path/to/external/icon.png) no-repeat;
+    padding-left: 10px;
+}
+/*pour les liens externes*/</code></pre>
+
+<h2>Selecteur Attribut doit <u>finir</u> par valeur</h2>
+<pre><code>img[src$=".jpg"] {
+    border:2px solid green;
+}</code></pre>
+
+<h2>Selecteur Checked</h2>
+<pre><code>input[type=radio]:checked {
+    border: 1px solid black;
+}</code></pre>
+
+<h2>Selecteur Not</h2>
+<pre><code>div:not(#container) {
+    color: blue;
+}</code></pre>
+
+<h2>Nth-child</h2>
+<ul>
+    <li>li:first-child</li>
+    <li>li:nth-child(2)</li>
+    <li>li:nth-child(3)</li>
+    <li>li:last-child</li>
+</ul>
+
+<h2>First Letter et First Line</h2>
+<ul>
+    <li>p::first-letter{...}</li>
+    <li>p::first-line{...}</li>
+</ul>
+
+    </div>
+</body>
+</html>
